@@ -1,0 +1,29 @@
+﻿<Page x:Class="AppHealth.Pages.StatisticsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AppHealth.Pages"
+      xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      mc:Ignorable="d" 
+      Height="450" Width="800"
+      Title="StatisticsPage">
+
+    <Grid Background="Wheat">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="800"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        
+        <ScrollViewer Grid.Column="1">
+            <StackPanel>
+                <lvc:CartesianChart x:Name="Graf" Series="{Binding SeriesCollection}" LegendLocation="Right" Width="800" Height="400"/>
+                <lvc:CartesianChart x:Name="Graf1" Series="{Binding SeriesCollection}" LegendLocation="Right" Width="800" Height="400"/>
+                <lvc:CartesianChart x:Name="Graf2" Series="{Binding SeriesCollection}" LegendLocation="Right" Width="800" Height="400"/>
+                <Button Content="1" Width="100" Height="50"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
