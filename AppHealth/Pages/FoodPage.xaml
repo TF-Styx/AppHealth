@@ -9,59 +9,6 @@
       Title="FoodPage">
 
     <Grid Background="White">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="25"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-
-        <!--#region FOOD -->
-
-        <StackPanel Grid.Column="0"
-                    HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Button Content="Добавить" FontSize="15"/>
-        </StackPanel>
-
-        <StackPanel Grid.Row="1" Grid.Column="0"
-                    HorizontalAlignment="Right" VerticalAlignment="Top">
-            <ComboBox>
-                <ComboBoxItem>Завтрак</ComboBoxItem>
-                <ComboBoxItem>Обед</ComboBoxItem>
-                <ComboBoxItem>Ужин</ComboBoxItem>
-            </ComboBox>
-            
-            <ListView FontSize="15">
-                <Button Content="Добавить"/>
-                <TextBlock>Яичница</TextBlock>
-                <TextBlock>Чай с 2 чайными ложками сахара</TextBlock>
-                <TextBlock>Огурцы и помидоры</TextBlock>
-                <TextBlock>Блины</TextBlock>
-                <TextBlock>Амлет</TextBlock>
-                <TextBlock>Кофе</TextBlock>
-            </ListView>
-        </StackPanel>
-
-        <StackPanel Grid.Row="1" Grid.Column="1"
-                    HorizontalAlignment="Left" VerticalAlignment="Top">
-            <ComboBox>
-                <ComboBoxItem>Завтрак</ComboBoxItem>
-                <ComboBoxItem>Обед</ComboBoxItem>
-                <ComboBoxItem>Ужин</ComboBoxItem>
-            </ComboBox>
-
-            <ListView FontSize="15">
-                <TextBlock>Яичница</TextBlock>
-                <TextBlock>Чай с 2 чайными ложками сахара</TextBlock>
-                <TextBlock>Огурцы и помидоры</TextBlock>
-                <TextBlock>Блины</TextBlock>
-                <TextBlock>Амлет</TextBlock>
-                <TextBlock>Кофе</TextBlock>
-            </ListView>
-        </StackPanel>
-
-        <!--#endregion-->
+        
     </Grid>
 </Page>
